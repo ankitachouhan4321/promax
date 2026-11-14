@@ -15,53 +15,75 @@ const faqData = [
     {
         id: 1,
         category: "GENERAL",
-        question: "What types of machines does Promax offer?",
+        question: "What types of machines does Promax India manufacture and supply?",
         answer:
-            "Promax offers a wide range of industrial machinery, including syrup making machines, tablet making machines, sanitary pad machines, paper cup machines, tissue paper machines, PVC pipe machines, slipper making machines, LED bulb machines, and more.",
+            "Promax India is a manufacturer and supplier of industrial machinery. Our product range includes paper plate making machines, paper cup making machines, slipper making machines, sanitary pad making machines, tissue paper making machines, syrup making machines, tablet making machines, PVC pipe machines, LED bulb making machines, and other production equipment.",
     },
     {
         id: 2,
-        category: "MACHINERY",
-        question: "Which industries can use Promax machinery?",
+        category: "PRODUCTS",
+        question: "Which machine is suitable for starting a small manufacturing business?",
         answer:
-            "Our machinery range serves different manufacturing sectors, including pharmaceutical, hygiene, paper products, packaging, plastic products, footwear, and electrical products. The suitable machine depends on your production requirements.",
+            "The right machine depends on the product you want to manufacture, your budget, available space, and production requirements. Promax India offers machinery for paper plates, paper cups, slippers, tissue paper, hygiene products, and other manufacturing businesses. You can contact our team to discuss suitable machine options.",
     },
     {
         id: 3,
-        category: "PRODUCTS",
-        question: "How can I choose the right machine for my business?",
+        category: "PAPER MACHINERY",
+        question: "Does Promax India offer paper plate and paper cup making machines?",
         answer:
-            "You can share your product type, required production capacity, available space, and budget with our team. This information can help identify machinery options that suit your manufacturing requirements.",
+            "Yes, Promax India offers paper plate making machines and paper cup making machines. These machines are used to manufacture disposable paper products. You can enquire about available machine models, specifications, production capacity, and pricing.",
     },
     {
         id: 4,
-        category: "QUOTATION",
-        question: "How can I get a quotation for a machine?",
+        category: "FOOTWEAR MACHINERY",
+        question: "Can I purchase a slipper making machine from Promax India?",
         answer:
-            "You can contact Promax through the website enquiry form or phone number. Mention the machine you are interested in and your requirements to request product details and pricing.",
+            "Yes, Promax India supplies slipper making machines for footwear manufacturing businesses. Contact our team to discuss available machinery, production requirements, and suitable machine options for your business.",
     },
     {
         id: 5,
-        category: "GENERAL",
-        question: "Does Promax manufacture sanitary pad making machines?",
+        category: "HYGIENE MACHINERY",
+        question: "Does Promax India provide sanitary pad and diaper making machines?",
         answer:
-            "Yes, sanitary pad making machines are part of the Promax machinery range. You can contact the team to discuss available machine options and your production needs.",
+            "Yes, Promax India offers sanitary pad making machines and diaper making machines as part of its hygiene product machinery range. You can contact us for information about machine options, features, and production requirements.",
     },
     {
         id: 6,
-        category: "PRODUCTS",
-        question: "Does Promax offer paper cup and paper plate machines?",
+        category: "INDUSTRIES",
+        question: "Which industries does Promax India serve?",
         answer:
-            "Yes, Promax offers paper cup making machines and paper plate making machines for businesses planning to manufacture disposable paper products.",
+            "Promax India offers machinery for pharmaceutical, hygiene, paper, packaging, plastic, footwear, and electrical product manufacturing. Our range includes syrup making machines, tablet making machines, tissue paper machines, PVC pipe machines, LED bulb machines, and more.",
     },
     {
         id: 7,
-        category: "SUPPORT",
-        question: "Can I request installation and technical support?",
+        category: "PRICING",
+        question: "What is the price of a manufacturing machine at Promax India?",
         answer:
-            "You can discuss installation, training, maintenance, and after-sales support requirements with the Promax team before purchasing. The availability and scope of these services should be confirmed with your quotation.",
+            "Machine prices depend on the product type, model, production capacity, automation level, and technical specifications. To receive an accurate quotation, contact Promax India with the machine name and your production requirements.",
+    },
+    {
+        id: 8,
+        category: "ENQUIRY",
+        question: "How can I get a quotation for industrial machinery?",
+        answer:
+            "You can request a quotation by calling Promax India at +91 74049 28392 or sending an enquiry through our website. Share the machine name, required production capacity, and other important details so our team can assist you.",
+    },
+    {
+        id: 9,
+        category: "SUPPORT",
+        question: "Can I get machine installation and after-sales support?",
+        answer:
+            "You can discuss installation, machine operation guidance, maintenance, and after-sales support with the Promax India team before purchasing. The availability and scope of these services should be confirmed for your selected machine.",
+    },
+    {
+        id: 10,
+        category: "CONTACT",
+        question: "How can I contact Promax India for machine details?",
+        answer:
+            "You can contact Promax India by phone at +91 74049 28392 or email at info@promax-india.com. Our team can help you with machinery enquiries, product information, and quotation requests.",
     },
 ];
+
 
 const Faq = () => {
     const [activeFaq, setActiveFaq] = useState(0);
@@ -78,6 +100,8 @@ const Faq = () => {
                 <div className="row g-5">
 
                     {/* LEFT COLUMN */}
+
+                    {/* LEFT COLUMN */}
                     <div className="col-lg-5">
 
                         <div className="faq-left-content">
@@ -87,18 +111,17 @@ const Faq = () => {
                             </p>
 
                             <h1 className="section-heading faq-main-heading">
-                                Got questions?
+                                Have Questions About
                                 <br />
-                                <span>
-                                    We've got answers.</span>
+                                <span>Our Machinery?</span>
                             </h1>
 
                             <p className="section-description">
-                                Find quick answers to common questions
-                                about Promax machinery, manufacturing
-                                solutions, product enquiries and more.
-                                Need more information? Our team is
-                                ready to help.
+                                Looking for the right manufacturing machine
+                                for your business? Find answers to common
+                                questions about Promax India's industrial
+                                machinery, product range, machine prices,
+                                production requirements, and enquiries.
                             </p>
 
                             {/* CONTACT CARD */}
@@ -108,12 +131,13 @@ const Faq = () => {
                                     <CircleHelp size={22} />
                                 </div>
 
-                                <h3>Still have questions?</h3>
+                                <h3>Need Help Choosing a Machine?</h3>
 
                                 <p>
-                                    Can't find the answer you're looking
-                                    for? Get in touch with our team to
-                                    discuss your machinery requirements.
+                                    Not sure which machine is right for your
+                                    business? Contact Promax India to discuss
+                                    your product, production needs, and
+                                    machinery requirements.
                                 </p>
 
                                 <div className="faq-contact-buttons">
@@ -123,15 +147,15 @@ const Faq = () => {
                                         className="btn btn-accent"
                                     >
                                         <MessageCircle size={16} />
-                                        Ask Us
+                                        Enquire Now
                                     </a>
 
                                     <a
-                                        href="tel:+91XXXXXXXXXX"
+                                        href="tel:+917404928392"
                                         className="btn faq-call-btn"
                                     >
                                         <Phone size={16} />
-                                        Call
+                                        Call Us
                                     </a>
 
                                 </div>
@@ -141,6 +165,7 @@ const Faq = () => {
                         </div>
 
                     </div>
+
 
                     {/* RIGHT COLUMN */}
                     <div className="col-lg-7">

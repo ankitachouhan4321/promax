@@ -70,97 +70,99 @@ const slides = [
 ];
 
 
+
 const products = [
     {
         id: 1,
-        category: "SYRUP MAKING",
-        name: "Syrup Making Machine",
+        category: "PAPER MACHINERY",
+        name: "Paper Plate Making Machine",
         image: "/img/prod/1.webp",
         features: [
-            "Efficient syrup production",
-            "Consistent mixing performance",
+            "Disposable paper plate production",
+            "Suitable for paper product manufacturing"
         ],
-        link: "/products/syrup-making-machine",
+        link: "/products/paper-plate-machine",
     },
     {
         id: 2,
-        category: "TABLET MAKING",
-        name: "Tablet Making Machine",
-        image: "/img/prod/1.webp",
-        features: [
-            "Precision tablet production",
-            "Reliable manufacturing process",
-        ],
-        link: "/products/tablet-making-machine",
-    },
-    {
-        id: 3,
-        category: "HYGIENE MACHINERY",
-        name: "Sanitary Pad Making Machine",
-        image: "/img/prod/1.webp",
-        features: [
-            "Efficient hygiene production",
-            "Smooth manufacturing operation",
-        ],
-        link: "/products/sanitary-pad-machine",
-    },
-    {
-        id: 4,
         category: "PAPER MACHINERY",
         name: "Paper Cup Making Machine",
         image: "/img/prod/1.webp",
         features: [
-            "Consistent cup production",
-            "Built for business efficiency",
+            "Disposable paper cup production",
+            "Suitable for paper cup manufacturing"
         ],
         link: "/products/paper-cup-machine",
     },
-
+    {
+        id: 3,
+        category: "FOOTWEAR MACHINERY",
+        name: "Slipper Making Machine",
+        image: "/img/prod/1.webp",
+        features: [
+            "Machinery for slipper manufacturing",
+            "Suitable for footwear production"
+        ],
+        link: "/products/slipper-machine",
+    },
+    {
+        id: 4,
+        category: "HYGIENE MACHINERY",
+        name: "Sanitary Pad Making Machine",
+        image: "/img/prod/1.webp",
+        features: [
+            "Sanitary pad production solutions",
+            "Suitable for hygiene product manufacturing"
+        ],
+        link: "/products/sanitary-pad-machine",
+    },
     {
         id: 5,
-        category: "SYRUP MAKING",
+        category: "PAPER MACHINERY",
+        name: "Tissue Paper Making Machine",
+        image: "/img/prod/1.webp",
+        features: [
+            "Machinery for tissue paper products",
+            "Suitable for tissue manufacturing businesses"
+        ],
+        link: "/products/tissue-paper-making-machine",
+    },
+    {
+        id: 6,
+        category: "PHARMACEUTICAL MACHINERY",
         name: "Syrup Making Machine",
         image: "/img/prod/1.webp",
         features: [
-            "Efficient syrup production",
-            "Consistent mixing performance",
+            "Machinery for syrup preparation",
+            "Suitable for liquid formulation production"
         ],
         link: "/products/syrup-making-machine",
     },
     {
-        id: 6,
-        category: "TABLET MAKING",
-        name: "Tablet Making Machine",
-        image: "/img/prod/1.webp",
-        features: [
-            "Precision tablet production",
-            "Reliable manufacturing process",
-        ],
-        link: "/products/tablet-making-machine",
-    },
-    {
         id: 7,
-        category: "HYGIENE MACHINERY",
-        name: "Sanitary Pad Making Machine",
+        category: "PLASTIC MACHINERY",
+        name: "PVC Pipe Making Machine",
         image: "/img/prod/1.webp",
         features: [
-            "Efficient hygiene production",
-            "Smooth manufacturing operation",
+            "Machinery for PVC pipe manufacturing",
+            "Suitable for plastic pipe production"
         ],
-        link: "/products/sanitary-pad-machine",
+        link: "/products/pvc-pipe-machine",
     },
     {
         id: 8,
-        category: "PAPER MACHINERY",
-        name: "Paper Cup Making Machine",
+        category: "ELECTRICAL MACHINERY",
+        name: "LED Bulb Making Machine",
         image: "/img/prod/1.webp",
         features: [
-            "Consistent cup production",
-            "Built for business efficiency",
+            "Machinery for LED bulb production",
+            "Suitable for electrical product manufacturing"
         ],
-        link: "/products/paper-cup-machine",
+        link: "/products/led-bulb-machine",
     },
 ];
+
+
 
 
 const Home = () => {
@@ -516,6 +518,8 @@ const Home = () => {
     OUR PROMISE SECTION
 ========================== */}
 
+
+            {/* OUR PROMISE SECTION */}
             <section className="promise-section section-padding">
                 <div className="container">
 
@@ -524,15 +528,15 @@ const Home = () => {
                         <div className="promise-content">
 
                             <p className="promise-label">
-                                — OUR PROMISE —
+                                — THE PROMAX PROMISE —
                             </p>
 
                             <h2 className="promise-heading">
-                                A YOUNG, ENERGETIC & PROACTIVE
+                                EMPOWERING BUSINESSES WITH
                                 <br className="d-none d-lg-block" />
-                                SOLUTION PROVIDER FOR YOUR
+                                RELIABLE MACHINERY &
                                 <br className="d-none d-lg-block" />
-                                <span>MANUFACTURING NEEDS</span>
+                                <span>SMART MANUFACTURING SOLUTIONS</span>
                             </h2>
 
                         </div>
@@ -541,6 +545,8 @@ const Home = () => {
 
                 </div>
             </section>
+            {/* OUR PROMISE SECTION END */}
+
 
             {/* OUR PROMISE SECTION END */}
 
@@ -549,32 +555,40 @@ const Home = () => {
     WHY CHOOSE US SECTION START
 ============================== */}
 
-            <section id="why-choose-sec" className="why-choose-section py-lg-5 py-4">
 
+            {/* WHY CHOOSE US SECTION START */}
+
+            <section
+                id="why-choose-sec"
+                className="why-choose-section py-lg-5 py-4"
+            >
                 <div className="container">
 
                     <div className="row align-items-center">
 
                         {/* LEFT CONTENT - 7 COLUMNS */}
-                        <div className="col-lg-7 col-md-12">
+                        <div className="col-lg-8 col-md-12">
 
                             <div className="why-choose-content">
 
                                 <p className="section-subheading">
-                                    WHY CHOOSE PROMAX
+                                    WHY CHOOSE PROMAX INDIA
                                 </p>
 
                                 <h2 className="section-heading">
-                                    Your Trusted Partner for
-                                    <span> Industrial Machinery</span>
+                                    The Right Machinery for
+                                    <span> Your Manufacturing Business</span>
                                 </h2>
 
                                 <p className="section-description mb-4">
-                                    Promax provides industrial machinery for businesses
-                                    across pharmaceutical, hygiene, paper, packaging,
-                                    plastic and electrical manufacturing. We focus on
-                                    helping businesses choose practical machinery
-                                    solutions for their production requirements.
+                                    At Promax India, we understand that every
+                                    manufacturing business has different needs.
+                                    As an industrial machinery manufacturer and
+                                    supplier, we offer machines for paper products,
+                                    hygiene products, pharmaceuticals, footwear,
+                                    plastic products and electrical manufacturing.
+                                    Our goal is to help businesses find suitable
+                                    machines for their production requirements.
                                 </p>
 
                                 {/* POINT 1 */}
@@ -585,13 +599,12 @@ const Home = () => {
                                     </div>
 
                                     <div className="why-item-content">
-                                      
                                         <p>
-                                            <strong>Customer-Focused Approach : </strong>
-                                            From syrup and tablet making machines to
-                                            sanitary pad, paper cup, PVC pipe and LED bulb
-                                            making machines, explore multiple manufacturing
-                                            solutions in one place.
+                                            <strong>Wide Range of Manufacturing Machines: </strong>
+                                            From paper plate and paper cup making machines
+                                            to slipper, sanitary pad, tissue paper, syrup,
+                                            tablet and PVC pipe machines, we offer
+                                            different machinery solutions under one roof.
                                         </p>
                                     </div>
 
@@ -605,13 +618,13 @@ const Home = () => {
                                     </div>
 
                                     <div className="why-item-content">
-                                        
                                         <p>
-                                            <strong>Customer-Focused Approach : </strong>
-                                            We offer machinery options for different
-                                            production needs, helping businesses identify
-                                            suitable equipment for their industry and
-                                            manufacturing goals.
+                                            <strong>Machinery for Different Industries: </strong>
+                                            Whether you want to manufacture disposable
+                                            paper products, hygiene products, footwear,
+                                            plastic items or electrical goods, we help
+                                            you explore machines suited to your
+                                            business and production goals.
                                         </p>
                                     </div>
 
@@ -625,13 +638,13 @@ const Home = () => {
                                     </div>
 
                                     <div className="why-item-content">
-                                       
-                                       
                                         <p>
-                                            <strong>Customer-Focused Approach : </strong>
-                                            Our machinery range is focused on supporting
-                                            efficient production processes, consistent
-                                            operations and better manufacturing workflows.
+                                            <strong>Focus on Efficient Production: </strong>
+                                            We offer manufacturing machinery designed
+                                            to support smooth production processes,
+                                            consistent output and practical daily
+                                            operations, helping businesses improve
+                                            their manufacturing workflow.
                                         </p>
                                     </div>
 
@@ -645,31 +658,32 @@ const Home = () => {
                                     </div>
 
                                     <div className="why-item-content">
-                                        
                                         <p>
-                                            <strong>Customer-Focused Approach : </strong>
-                                            We aim to understand each customer's machinery
-                                            requirements and provide clear product
-                                            information to support informed purchasing
-                                            decisions.
+                                            <strong>Customer-Focused Machinery Solutions: </strong>
+                                            We focus on understanding your product type,
+                                            production capacity, available space and
+                                            business requirements. Our team helps you
+                                            explore suitable machine options so you
+                                            can make a more informed buying decision.
                                         </p>
                                     </div>
 
                                 </div>
 
-                           
                             </div>
 
                         </div>
 
-                        {/* RIGHT SIDE - EMPTY FOR BACKGROUND IMAGE */}
+                        {/* RIGHT SIDE - BACKGROUND IMAGE SPACE */}
                         <div className="col-lg-5 d-none d-lg-block"></div>
 
                     </div>
 
                 </div>
-
             </section>
+
+            {/* WHY CHOOSE US SECTION END */}
+
 
             {/* WHY CHOOSE US SECTION END */}
 
@@ -678,8 +692,10 @@ const Home = () => {
     PRODUCTS SECTION START
 ========================== */}
 
-            <section className="products-section section-padding">
 
+            {/* PRODUCTS SECTION START */}
+
+            <section className="products-section section-padding">
                 <div className="container">
 
                     {/* Section Heading */}
@@ -688,19 +704,22 @@ const Home = () => {
                         <div className="col-lg-9">
 
                             <p className="section-subheading">
-                                OUR MACHINERY
+                                EXPLORE OUR PRODUCTS
                             </p>
 
                             <h2 className="section-heading">
-                                Built for Precision, Performance -
+                                Manufacturing Machines for
                                 <br />
-                                <span>and Productivity.</span>
+                                <span>Every Business Need.</span>
                             </h2>
 
                             <p className="section-description">
-                                Explore our range of industrial machinery for
-                                pharmaceutical, hygiene, paper, plastic and
-                                electrical product manufacturing.
+                                Explore Promax India's range of industrial
+                                manufacturing machines, including paper plate,
+                                paper cup, slipper, sanitary pad, tissue paper,
+                                pharmaceutical, plastic and electrical machinery.
+                                Find suitable machines to start, manage or
+                                expand your manufacturing business.
                             </p>
 
                         </div>
@@ -708,7 +727,7 @@ const Home = () => {
                         <div className="col-lg-3 text-lg-end">
 
                             <a href="/products" className="products-view-all">
-                                View All Machines
+                                View All Products
                                 <ArrowUpRight size={17} />
                             </a>
 
@@ -738,7 +757,7 @@ const Home = () => {
                                         <a href={product.link}>
                                             <img
                                                 src={product.image}
-                                                alt={product.name}
+                                                alt={`${product.name} - Promax India`}
                                                 className="product-image img-fluid"
                                                 loading="lazy"
                                             />
@@ -797,8 +816,9 @@ const Home = () => {
                     </div>
 
                 </div>
-
             </section>
+
+            {/* PRODUCTS SECTION END */}
 
             {/* PRODUCTS SECTION END */}
 

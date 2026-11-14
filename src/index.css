@@ -1572,13 +1572,13 @@ button {
 }
 
 .why-choose-content .section-heading {
-  max-width: 600px;
+  /* max-width: 600px; */
   margin-bottom: 20px;
 }
 
-.why-choose-content .section-description {
+/* .why-choose-content .section-description {
   max-width: 600px;
-}
+} */
 
 /* WHY CHOOSE ITEMS */
 
@@ -1629,9 +1629,9 @@ button {
 
 .why-item-content p {
   margin: 0;
-  max-width: 520px;
+  /* max-width: 520px; */
   color: var(--text-muted, #64748B);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7;
 }
 
