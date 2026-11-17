@@ -164,9 +164,34 @@ const Navbar = () => {
 
                         <a href="/blog" onClick={closeMenu}>Blog</a>
                         <a href="/contact-us" onClick={closeMenu}>Contact Us</a>
+
+                        {/* MOBILE CALL & QUOTE BUTTONS */}
+                        <div className="mobile-nav-actions">
+
+                            <a
+                                href="tel:+917404928392"
+                                className="nav-phone-btn"
+                                onClick={closeMenu}
+                            >
+                                <i className="fa-solid fa-phone-volume"></i>
+                                <span>+91 74049 28392</span>
+                            </a>
+
+                            <a
+                                href="/contact-us"
+                                className="btn-main nav-quote"
+                                onClick={closeMenu}
+                            >
+                                Get a Quote
+                                <ArrowRight size={16} />
+                            </a>
+
+                        </div>
+
+
                     </nav>
 
-                    <div className="nav-actions">
+                    <div className="nav-actions ">
 
                         <a href="tel:+917404928392" className="nav-phone-btn">
                             <i className="fa-solid fa-phone-volume fa-shake"></i>

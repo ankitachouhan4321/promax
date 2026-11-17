@@ -15,7 +15,7 @@ const companyLinks = [
     { name: "About Us", url: "/about-us" },
     { name: "Our Products", url: "/products" },
     { name: "Industries", url: "/industries" },
-    { name: "Videos", url: "/videos" },
+    // { name: "Videos", url: "/videos" },
     { name: "Blog", url: "/blog" },
     { name: "FAQs", url: "/faq" },
     { name: "Contact Us", url: "/contact-us" },

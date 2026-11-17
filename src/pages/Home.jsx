@@ -71,67 +71,13 @@ const slides = [
 
 
 
+
 const products = [
     {
         id: 1,
-        category: "PAPER MACHINERY",
-        name: "Paper Plate Making Machine",
-        image: "/img/prod/1.webp",
-        features: [
-            "Disposable paper plate production",
-            "Suitable for paper product manufacturing"
-        ],
-        link: "/products/paper-plate-machine",
-    },
-    {
-        id: 2,
-        category: "PAPER MACHINERY",
-        name: "Paper Cup Making Machine",
-        image: "/img/prod/1.webp",
-        features: [
-            "Disposable paper cup production",
-            "Suitable for paper cup manufacturing"
-        ],
-        link: "/products/paper-cup-machine",
-    },
-    {
-        id: 3,
-        category: "FOOTWEAR MACHINERY",
-        name: "Slipper Making Machine",
-        image: "/img/prod/1.webp",
-        features: [
-            "Machinery for slipper manufacturing",
-            "Suitable for footwear production"
-        ],
-        link: "/products/slipper-machine",
-    },
-    {
-        id: 4,
-        category: "HYGIENE MACHINERY",
-        name: "Sanitary Pad Making Machine",
-        image: "/img/prod/1.webp",
-        features: [
-            "Sanitary pad production solutions",
-            "Suitable for hygiene product manufacturing"
-        ],
-        link: "/products/sanitary-pad-machine",
-    },
-    {
-        id: 5,
-        category: "PAPER MACHINERY",
-        name: "Tissue Paper Making Machine",
-        image: "/img/prod/1.webp",
-        features: [
-            "Machinery for tissue paper products",
-            "Suitable for tissue manufacturing businesses"
-        ],
-        link: "/products/tissue-paper-making-machine",
-    },
-    {
-        id: 6,
         category: "PHARMACEUTICAL MACHINERY",
         name: "Syrup Making Machine",
-        image: "/img/prod/1.webp",
+        image: "/img/prod/1.png",
         features: [
             "Machinery for syrup preparation",
             "Suitable for liquid formulation production"
@@ -139,26 +85,81 @@ const products = [
         link: "/products/syrup-making-machine",
     },
     {
-        id: 7,
-        category: "PLASTIC MACHINERY",
-        name: "PVC Pipe Making Machine",
-        image: "/img/prod/1.webp",
+        id: 2,
+        category: "PHARMACEUTICAL MACHINERY",
+        name: "Tablet Making Machine",
+        image: "/img/prod/2.png",
         features: [
-            "Machinery for PVC pipe manufacturing",
-            "Suitable for plastic pipe production"
+            "Machinery for tablet manufacturing",
+            "Suitable for pharmaceutical production"
         ],
-        link: "/products/pvc-pipe-machine",
+        link: "/products/tablet-making-machine",
+    },
+    {
+        id: 3,
+        category: "HYGIENE MACHINERY",
+        name: "Sanitary Pad Machine",
+        image: "/img/prod/3.png",
+        features: [
+            "Sanitary pad production solutions",
+            "Suitable for hygiene product manufacturing"
+        ],
+        link: "/products/sanitary-pad-machine",
+    },
+    {
+        id: 4,
+        category: "HYGIENE MACHINERY",
+        name: "Mask Making Machine",
+        image: "/img/prod/4.png",
+        features: [
+            "Machinery for face mask production",
+            "Suitable for hygiene product manufacturing"
+        ],
+        link: "/products/mask-making-machine",
+    },
+    {
+        id: 5,
+        category: "PAPER MACHINERY",
+        name: "Tissue Paper Making Machine",
+        image: "/img/prod/5.png",
+        features: [
+            "Machinery for tissue paper production",
+            "Suitable for paper product manufacturing"
+        ],
+        link: "/products/tissue-paper-making-machine",
+    },
+    {
+        id: 6,
+        category: "PAPER MACHINERY",
+        name: "Paper Plate Machine",
+        image: "/img/prod/6.png",
+        features: [
+            "Machinery for disposable paper plates",
+            "Suitable for paper plate production"
+        ],
+        link: "/products/paper-plate-machine",
+    },
+    {
+        id: 7,
+        category: "PAPER MACHINERY",
+        name: "Paper Cup Machine",
+        image: "/img/prod/7.png",
+        features: [
+            "Machinery for disposable paper cups",
+            "Suitable for paper cup manufacturing"
+        ],
+        link: "/products/paper-cup-machine",
     },
     {
         id: 8,
-        category: "ELECTRICAL MACHINERY",
-        name: "LED Bulb Making Machine",
-        image: "/img/prod/1.webp",
+        category: "FOOTWEAR MACHINERY",
+        name: "Slipper Machine",
+        image: "/img/prod/8.png",
         features: [
-            "Machinery for LED bulb production",
-            "Suitable for electrical product manufacturing"
+            "Machinery for slipper manufacturing",
+            "Suitable for footwear production"
         ],
-        link: "/products/led-bulb-machine",
+        link: "/products/slipper-machine",
     },
 ];
 
@@ -792,7 +793,7 @@ const Home = () => {
                                                 href={product.link}
                                                 className="btn btn-outline"
                                             >
-                                                View Details
+                                                View More
                                             </a>
 
                                             <a
@@ -820,7 +821,6 @@ const Home = () => {
 
             {/* PRODUCTS SECTION END */}
 
-            {/* PRODUCTS SECTION END */}
 
 
 {/* faq start */}
