@@ -1,5 +1,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
 import Faq from '../components/Faq';
 import {
     ArrowRight,
@@ -11,6 +13,11 @@ import {
     Settings,
     Zap,
     ShieldCheck,
+    MessageSquareMore,
+    ClipboardList,
+    FileText,
+    ShoppingCart,
+    
 } from "lucide-react";
 
 
@@ -69,7 +76,64 @@ const slides = [
     },
 ];
 
-
+const industriesData = [
+    {
+        id: 1,
+        title: "Pharmaceutical Industry",
+        image: "/img/ind-1.png",
+        description: "Syrup and tablet manufacturing machinery",
+        link: "/products/syrup-making-machine",
+    },
+    {
+        id: 2,
+        title: "Hygiene Products Industry",
+        image: "/img/ind-2.png",
+        description: "Sanitary pad, mask and diaper machinery",
+        link: "/products/sanitary-pad-machine",
+    },
+    {
+        id: 3,
+        title: "Paper Products Industry",
+        image: "/img/ind-3.png",
+        description: "Paper plate, paper cup and tissue machinery",
+        link: "/products/paper-plate-machine",
+    },
+    {
+        id: 4,
+        title: "Footwear Industry",
+        image: "/img/ind-4.png",
+        description: "Slipper and shoe making machinery",
+        link: "/products/slipper-machine",
+    },
+    {
+        id: 5,
+        title: "Plastic Manufacturing Industry",
+        image: "/img/ind-5.png",
+        description: "PVC pipe, bucket and bottle machinery",
+        link: "/products/pvc-pipe-machine",
+    },
+    {
+        id: 6,
+        title: "Electrical & Electronics Industry",
+        image: "/img/ind-6.png",
+        description: "LED bulb and mobile charger machinery",
+        link: "/products/led-bulb-machine",
+    },
+    {
+        id: 7,
+        title: "Packaging & Carry Bag Industry",
+        image: "/img/ind-7.png",
+        description: "Carry bag manufacturing machinery",
+        link: "/products/carry-bag-machine",
+    },
+    {
+        id: 8,
+        title: "Disposable Products Industry",
+        image: "/img/ind-8.png",
+        description: "Machinery for disposable paper products",
+        link: "/products/paper-cup-machine",
+    },
+];
 
 
 const products = [
@@ -380,10 +444,6 @@ const Home = () => {
 
             </section>
             {/* HERO BANNER END */}
-
-            {/* ===============================
-    ABOUT US SECTION START
-================================ */}
 
 
             {/* ==========================
@@ -700,7 +760,7 @@ const Home = () => {
                 <div className="container">
 
                     {/* Section Heading */}
-                    <div className="row align-items-end mb-5 g-4">
+                    <div className="row align-items-end g-4">
 
                         <div className="col-lg-9">
 
@@ -822,12 +882,242 @@ const Home = () => {
             {/* PRODUCTS SECTION END */}
 
 
+            {/* INDUSTRIES WE SERVE START */}
 
-{/* faq start */}
-<Faq/>
+            <section id="industries" className="py-lg-5 py-3">
+                <div className="container-lg py-lg-5 py-3">
 
-{/* faq end */}
-           
+                    {/* SECTION HEADING */}
+                    <div className="row text-center mb-5">
+                        <div className="col-lg-8 mx-auto">
+
+                            <p className="section-subheading">
+                                INDUSTRIES WE SERVE
+                            </p>
+
+                            <h2 className="section-heading">
+                                Machinery Solutions for
+                                <span> Every Industry</span>
+                            </h2>
+
+                         
+                         
+
+                        </div>
+                    </div>
+
+                    {/* SWIPER SLIDER */}
+                    <div className="position-relative category-slider-wrap">
+
+                        <Swiper
+                            modules={[Navigation, Autoplay]}
+                            spaceBetween={24}
+                            slidesPerView={1}
+                            loop={true}
+                            autoplay={{
+                                delay: 2800,
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: true,
+                            }}
+                            navigation={{
+                                nextEl: ".category-next",
+                                prevEl: ".category-prev",
+                            }}
+                            breakpoints={{
+                                320: {
+                                    slidesPerView: 1,
+                                },
+                                576: {
+                                    slidesPerView: 2,
+                                },
+                                992: {
+                                    slidesPerView: 3,
+                                },
+                                1200: {
+                                    slidesPerView: 4,
+                                },
+                            }}
+                            className="categorySwiper"
+                        >
+
+                            {industriesData.map((industry, index) => (
+
+                                <SwiperSlide key={industry.id}>
+
+                                    <a
+                                        href={industry.link}
+                                        className="industry-card-link"
+                                        aria-label={`Explore ${industry.title} machinery`}
+                                    >
+
+                                        <div
+                                            className={`card ${index % 2 !== 0 ? "even" : ""
+                                                }`}
+                                        >
+
+                                            <img
+                                                src={industry.image}
+                                                className="card-img-top"
+                                                alt={`${industry.title} - Promax India`}
+                                                loading="lazy"
+                                            />
+
+                                            <div className="card-body">
+
+                                                <h5 className="card-title">
+                                                    {industry.title}
+                                                </h5>
+
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+
+                                </SwiperSlide>
+
+                            ))}
+
+                        </Swiper>
+
+                        {/* NAVIGATION BUTTONS */}
+                        <div className="industry-navigation">
+
+                            <button
+                                type="button"
+                                className="category-prev"
+                                aria-label="Previous industry"
+                            >
+                                <ChevronLeft size={20} />
+                            </button>
+
+                            <button
+                                type="button"
+                                className="category-next"
+                                aria-label="Next industry"
+                            >
+                                <ChevronRight size={20} />
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            {/* INDUSTRIES WE SERVE END */}
+
+
+            {/* faq start */}
+            <Faq />
+
+            {/* faq end */}
+
+
+            {/* process start */}
+            <section className="machine-process-section section-padding">
+                <div className="container">
+
+                    {/* Section Heading */}
+                    <div className="row justify-content-center text-center mb-5">
+                        <div className="col-lg-8">
+                            <p className="section-subheading">
+                                HOW TO GET YOUR MACHINE
+                            </p>
+
+                            <h2 className="section-heading">
+                                Simple Process to Get the
+                                <span> Right Machine</span>
+                            </h2>
+
+                          
+                        </div>
+                    </div>
+
+                    {/* Steps */}
+                    <div className="row g-4">
+
+                        {/* Step 1 */}
+                        <div className="col-lg-3 col-md-6">
+                            <div className="process-card h-100">
+                                <div className="process-step">01</div>
+
+                                <div className="process-icon">
+                                    <MessageSquareMore size={28} />
+                                </div>
+
+                                <h3>Send Enquiry</h3>
+
+                                <p>
+                                    Contact us with the machine name or share your business
+                                    requirement through call, WhatsApp, or enquiry form.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Step 2 */}
+                        <div className="col-lg-3 col-md-6">
+                            <div className="process-card h-100">
+                                <div className="process-step">02</div>
+
+                                <div className="process-icon">
+                                    <ClipboardList size={28} />
+                                </div>
+
+                                <h3>Discuss Requirement</h3>
+
+                                <p>
+                                    Our team understands your product type, production capacity,
+                                    budget, and business needs to suggest the right machine.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Step 3 */}
+                        <div className="col-lg-3 col-md-6">
+                            <div className="process-card h-100">
+                                <div className="process-step">03</div>
+
+                                <div className="process-icon">
+                                    <FileText size={28} />
+                                </div>
+
+                                <h3>Get Quotation</h3>
+
+                                <p>
+                                    We share machine details, quotation, and important information
+                                    so you can review the best option for your business.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Step 4 */}
+                        <div className="col-lg-3 col-md-6">
+                            <div className="process-card h-100">
+                                <div className="process-step">04</div>
+
+                                <div className="process-icon">
+                                    <ShoppingCart size={28} />
+                                </div>
+
+                                <h3>Confirm Order</h3>
+
+                                <p>
+                                    Once you finalize the machine, you can confirm your order
+                                    and move ahead with the next process smoothly.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                  
+
+                </div>
+            </section>
+
+            {/* process end */}
 
          
 

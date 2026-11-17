@@ -839,13 +839,13 @@ button {
   }
 
   .hero-overlay {
-    background: linear-gradient(
+    /* background: linear-gradient(
       90deg,
       #fff 0%,
       rgba(255,255,255,0.95) 30%,
       rgba(255,255,255,0.5) 70%,
       rgba(255,255,255,0.1) 100%
-    );
+    ); */
   }
 
   .hero-title {
@@ -959,9 +959,9 @@ button {
    PROMAX PRODUCTS SECTION
 =========================== */
 
-.products-section {
+/* .products-section {
   background: #fafbfd;
-}
+} */
 
 /* VIEW ALL LINK */
 
@@ -2082,7 +2082,7 @@ button {
 ================================ */
 
 .faq-section {
-  background: #ffffff;
+  background: var(--bg-light);
 }
 
 /* LEFT CONTENT */
@@ -2376,3 +2376,243 @@ button {
 
 
 /* faq end */
+
+/* =========================
+   HOW TO GET YOUR MACHINE
+========================= */
+
+/* .machine-process-section {
+  background: #f8fbff;
+} */
+
+.process-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e6edf5;
+  border-radius: 14px;
+  padding: 30px 22px 24px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(8, 29, 61, 0.08);
+  border-color: rgba(22, 75, 156, 0.18);
+}
+
+.process-step {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--accent, #F47721);
+  letter-spacing: 1px;
+}
+
+.process-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(22, 75, 156, 0.08);
+  color: var(--primary, #164B9C);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  transition: 0.3s ease;
+}
+
+.process-card:hover .process-icon {
+  background: var(--primary, #164B9C);
+  color: #ffffff;
+}
+
+.process-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--secondary, #081D3D);
+  margin-bottom: 12px;
+}
+
+.process-card p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #64748b;
+  margin: 0;
+}
+
+
+
+
+
+@media (max-width: 576px) {
+  .process-card {
+    padding: 24px 18px 20px;
+  }
+
+  .process-card h3 {
+    font-size: 18px;
+  }
+
+  .process-card p {
+    font-size: 13px;
+  }
+
+
+}
+
+/* ================================
+   PROMAX INDUSTRIES SECTION start
+================================ */
+
+#industries {
+    background: #f8fbff;
+    overflow: hidden;
+}
+
+#industries .category-slider-wrap {
+    padding-bottom: 15px;
+}
+
+#industries .categorySwiper {
+    padding-bottom: 10px;
+}
+
+#industries .industry-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CARD */
+
+#industries .card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 3px;
+    background: #fff;
+    height: 350px;
+    transition: 0.3s ease;
+}
+
+/* ALTERNATE CARD POSITION */
+
+#industries .card.even {
+    margin-top: 40px;
+}
+
+/* IMAGE */
+
+#industries .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+#industries .card:hover .card-img-top {
+    transform: scale(1.06);
+}
+
+/* BOTTOM TITLE */
+
+#industries .card-body {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 17px 20px 15px;
+
+    background: var(--primary, #164B9C);
+    color: #ffffff;
+    text-align: center;
+
+    clip-path: polygon(
+        0% 0%,
+        92% 0%,
+        100% 100%,
+        8% 100%
+    );
+
+    transition: background 0.3s ease;
+}
+
+#industries .card-title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+#industries .card:hover .card-body {
+    background: var(--accent, #F47721);
+}
+
+/* NAVIGATION BUTTONS */
+
+#industries .industry-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#industries .category-prev,
+#industries .category-next {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dbe4f0;
+    border-radius: 50%;
+    background: #ffffff;
+    color: var(--primary, #164B9C);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#industries .category-prev:hover,
+#industries .category-next:hover {
+    background: var(--primary, #164B9C);
+    border-color: var(--primary, #164B9C);
+    color: #ffffff;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+    #industries .card {
+        height: 320px;
+    }
+
+    #industries .card.even {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 575px) {
+    #industries .card {
+        height: 330px;
+    }
+
+    #industries .card.even {
+        margin-top: 0;
+    }
+
+    #industries .card-title {
+        font-size: 15px;
+    }
+
+    #industries .card-body {
+        padding: 14px 18px;
+    }
+}
+
+/* industries end */
