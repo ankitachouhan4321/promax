@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import Counter from '../components/Counter'
 import Faq from '../components/Faq';
 import {
     ArrowRight,
@@ -445,6 +446,7 @@ const Home = () => {
             </section>
             {/* HERO BANNER END */}
 
+            
 
             {/* ==========================
     ABOUT US SECTION
@@ -606,11 +608,8 @@ const Home = () => {
 
                 </div>
             </section>
-            {/* OUR PROMISE SECTION END */}
-
-
-            {/* OUR PROMISE SECTION END */}
-
+     
+     
 
             {/* ==============================
     WHY CHOOSE US SECTION START
@@ -746,8 +745,6 @@ const Home = () => {
             {/* WHY CHOOSE US SECTION END */}
 
 
-            {/* WHY CHOOSE US SECTION END */}
-
 
             {/* ==========================
     PRODUCTS SECTION START
@@ -882,10 +879,18 @@ const Home = () => {
             {/* PRODUCTS SECTION END */}
 
 
+        
+
+
+            {/* PROMAX BENEFITS SECTION START */}
+
+          <Counter/>
+
+            {/* PROMAX BENEFITS SECTION END */}
             {/* INDUSTRIES WE SERVE START */}
 
             <section id="industries" className="py-lg-5 py-3">
-                <div className="container-lg py-lg-5 py-3">
+                <div className="container-fluid ">
 
                     {/* SECTION HEADING */}
                     <div className="row text-center mb-5">
@@ -900,8 +905,8 @@ const Home = () => {
                                 <span> Every Industry</span>
                             </h2>
 
-                         
-                         
+
+
 
                         </div>
                     </div>
@@ -934,7 +939,7 @@ const Home = () => {
                                     slidesPerView: 3,
                                 },
                                 1200: {
-                                    slidesPerView: 4,
+                                    slidesPerView: 6,
                                 },
                             }}
                             className="categorySwiper"
@@ -1007,6 +1012,7 @@ const Home = () => {
             </section>
 
             {/* INDUSTRIES WE SERVE END */}
+
 
 
             {/* faq start */}

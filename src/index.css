@@ -2616,3 +2616,117 @@ button {
 }
 
 /* industries end */
+
+
+/* PROMAX DARK BENEFITS SECTION */
+
+.promax-benefits {
+    background: #081D3D;
+    background-image:url('/img/map.png');
+    color: #ffffff;
+}
+
+/* MAIN COUNTER */
+
+.promax-main-stat {
+    padding: 20px 0 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.promax-client-count {
+    font-size: clamp(75px, 10vw, 145px) !important;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -4px;
+    color: #ffffff !important;
+    margin: 15px 0;
+}
+
+.promax-main-stat h4 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #F47721;
+}
+
+.promax-main-stat p {
+    color: #cbd5e1;
+    font-size: 15px;
+    margin: 12px 0 0;
+}
+
+/* SMALL COUNTERS */
+
+.promax-stat-item {
+    padding: 12px;
+}
+
+.promax-stat-item h3 {
+    font-size: 46px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.promax-stat-item p {
+    color: #cbd5e1;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* BENEFIT CARDS */
+
+.promax-benefit-card {
+    background: #102B50;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 8px;
+    padding: 10px 12px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.promax-benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: #F47721;
+}
+
+.promax-benefit-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    color: #F47721;
+}
+
+.promax-benefit-card h4 {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+    .promax-client-count {
+        font-size: 70px !important;
+        letter-spacing: -2px;
+    }
+
+    .promax-stat-item h3 {
+        font-size: 32px;
+    }
+
+    .promax-main-stat h4 {
+        font-size: 24px;
+    }
+
+    .promax-benefit-card {
+        padding: 20px 10px;
+    }
+}
