@@ -229,8 +229,6 @@ const products = [
 ];
 
 
-
-
 const Home = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -256,7 +254,6 @@ const Home = () => {
     }, []);
 
     // state-counter start
-
 
 
     const stats = [
@@ -580,10 +577,7 @@ const Home = () => {
             {/* ==========================
     OUR PROMISE SECTION
 ========================== */}
-
-
-            {/* OUR PROMISE SECTION */}
-            <section className="promise-section section-padding">
+            <section className="promise-section section-padding pt-0">
                 <div className="container">
 
                     <div className="promise-banner">
@@ -608,7 +602,10 @@ const Home = () => {
 
                 </div>
             </section>
-     
+
+
+            {/* OUR PROMISE SECTION */}
+          
      
 
             {/* ==============================

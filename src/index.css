@@ -1208,7 +1208,7 @@ button {
 .about-us-image {
   width: 100%;
   overflow: hidden;
-  border-radius: 18px;
+  /* border-radius: 18px; */
   box-shadow: 0 20px 35px rgba(8, 29, 61, 0.13);
 }
 
@@ -1752,7 +1752,7 @@ button {
 .promax-footer {
   --footer-bg: #0d111a;
   --footer-text: #cbd5e1;
-  background: var(--footer-bg);
+  background:#031d3c;
   color: #fff;
   font-family: var(--font-body, sans-serif);
 }
@@ -2475,15 +2475,15 @@ button {
     font-size: 13px;
   }
 
-
 }
+
 
 /* ================================
    PROMAX INDUSTRIES SECTION start
 ================================ */
 
 #industries {
-    background: #f8fbff;
+    /* background: #f8fbff; */
     overflow: hidden;
 }
 
@@ -2551,7 +2551,6 @@ button {
         100% 100%,
         8% 100%
     );
-
     transition: background 0.3s ease;
 }
 
@@ -2749,3 +2748,533 @@ button {
         padding: 20px 10px;
     }
 }
+
+
+/* promax-benefits end */
+
+/* manufacture start */
+
+/* MISSION & VISION */
+
+.pro-mission-vision {
+  background: var(--pilco-light);
+}
+
+.pro-mv-heading p {
+  color: #657984;
+  font-size: 14px;
+  margin: 12px auto 0;
+  max-width: 550px;
+  line-height: 1.7;
+}
+
+/* SIMPLE SIDE-BY-SIDE BLOCKS */
+
+.pro-mv-item {
+  height: 100%;
+  padding: 10px 35px 10px 0;
+}
+
+.pro-mv-vision {
+  border-left: 1px solid #b7dbe4;
+  padding-left: 40px;
+}
+
+.pro-mv-icon {
+      width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fe7834;
+    color: white;
+    font-size: 23px;
+    margin-bottom: 20px;
+    clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
+}
+
+.pro-mv-item h3 {
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.pro-mv-item p {
+  color: #d9d9d9;
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 767px) {
+  .pro-manufacturing-image img {
+    height: 280px;
+  }
+
+  .pro-manufacturing-points {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .pro-mv-item {
+    padding: 0 5px;
+  }
+
+  .pro-mv-vision {
+    border-left: none;
+    border-top: 1px solid #b7dbe4;
+    padding-top: 30px;
+    margin-top: 12px;
+  }
+
+  .pro-mv-heading {
+    margin-bottom: 30px !important;
+  }
+}
+.pro-manufacturing-points {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 25px;
+    display: grid;
+    gap: 15px;
+}
+
+.pro-manufacturing-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.pro-manufacturing-points div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--pilco-text);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pro-manufacturing-points i {
+  color: var(--pilco-primary);
+  font-size: 13px;
+}
+.pro-mission-vision {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: fit-content;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 17, 38, 0.98) 0%,
+      rgba(8, 29, 61, 0.96) 35%,
+      rgba(8, 29, 61, 0.82) 55%,
+      rgba(8, 29, 61, 0.25) 100%
+    ),
+    url("/img/why.png");
+
+  background-size: cover;
+  background-position: center, right center;
+  background-repeat: no-repeat;
+}
+
+.manufacturing .manufacturing-content {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-muted, #64748B);
+}
+
+.manufacturing .img-box{
+  overflow: hidden;
+
+  
+}
+
+
+.manufacturing .img-box:hover img{
+  transform: scale(1.04);
+  transition: 2s;
+}
+
+  
+
+
+/* manufacture end */
+
+
+/* ===================================
+   PROMAX CONTACT SECTION start
+=================================== */
+
+.promax-contact-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===================================
+   LEFT CONTENT
+=================================== */
+
+.promax-contact-details {
+  padding-top: 10px;
+}
+
+.promax-contact-description {
+  color: #526874;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+/* ===================================
+   CONTACT INFORMATION CARDS
+=================================== */
+
+.promax-contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  border: 1px solid #e4f0f4;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.promax-contact-info-item:hover {
+  border-color: var(--pro-primary);
+  box-shadow: 0 8px 25px rgba(0, 73, 116, 0.07);
+  transform: translateY(-3px);
+}
+
+/* ICONS */
+
+.promax-contact-info-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--pro-light);
+  color: var(--accent);
+  font-size: 19px;
+  /* clip-path: polygon(
+    0% 0%,
+    95% 0%,
+    100% 100%,
+    5% 100%
+  ); */
+  transition: all 0.3s ease;
+}
+
+.promax-contact-info-item:hover
+.promax-contact-info-icon {
+  background: var(--accent-hover);
+  color: #ffffff;
+}
+
+
+
+/* TEXT */
+
+.promax-contact-info-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.promax-contact-info-text h4 {
+  color: var(--pro-primary-dark);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.promax-contact-info-text a {
+  display: block;
+  width: fit-content;
+  color: var(--pro-text);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.promax-contact-info-text a:hover {
+  color: var(--pro-primary);
+}
+
+.promax-contact-info-text p {
+  color: #617580;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* ===================================
+   INFORMATION NOTE
+=================================== */
+
+.promax-contact-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 19px;
+  margin-top: 25px;
+  background: var(--pro-light);
+  border-left: 4px solid var(--pro-primary);
+  border-radius: 8px;
+}
+
+.promax-contact-note i {
+  color: var(--pro-primary-dark);
+  font-size: 19px;
+  margin-top: 3px;
+}
+
+.promax-contact-note p {
+  color: var(--pro-text);
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ===================================
+   CONTACT FORM
+=================================== */
+
+.promax-contact-form {
+  background: #ffffff;
+  padding: 40px;
+  border: 1px solid #e2f0f4;
+  border-radius: 10px;
+  box-shadow: 0 15px 50px rgba(0, 73, 116, 0.09);
+  position: relative;
+  overflow: hidden;
+}
+
+.promax-contact-form::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    var(--pro-primary-dark),
+    var(--pro-primary)
+  );
+}
+
+/* FORM HEADER */
+
+.promax-form-header {
+  margin-bottom: 30px;
+}
+
+.promax-form-header p {
+  color: #6b7d87;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ===================================
+   FORM LABELS
+=================================== */
+
+.promax-contact-form .form-label {
+  color: var(--pro-text);
+  font-size: 13px;
+  font-weight: 650;
+  margin-bottom: 9px;
+}
+
+.promax-contact-form .form-label span {
+  color: #e34545;
+}
+
+/* ===================================
+   FORM FIELDS
+=================================== */
+
+.promax-contact-form .form-control,
+.promax-contact-form .form-select {
+  min-height: 49px;
+  padding: 12px 15px;
+  color: var(--pro-text);
+  background: #f9fcfd;
+  border: 1px solid #dfebef;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: none;
+  transition: all 0.25s ease;
+}
+
+.promax-contact-form textarea.form-control {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.promax-contact-form .form-control::placeholder {
+  color: #95a4ac;
+  font-size: 13px;
+}
+
+.promax-contact-form .form-control:focus,
+.promax-contact-form .form-select:focus {
+  background: #ffffff;
+  border-color: var(--pro-primary);
+  box-shadow: 0 0 0 4px rgba(8, 183, 211, 0.1);
+  outline: none;
+}
+
+.promax-contact-form .form-control:hover,
+.promax-contact-form .form-select:hover {
+  border-color: var(--pro-primary);
+}
+
+/* ===================================
+   SUBMIT BUTTON
+=================================== */
+
+.promax-contact-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  min-width: 210px;
+  min-height: 52px;
+  padding: 14px 28px;
+  color: #ffffff;
+  background: var(--pro-primary-dark);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.promax-contact-submit:hover:not(:disabled) {
+  background: var(--pro-primary);
+  transform: translateY(-2px);
+}
+
+.promax-contact-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.promax-contact-submit:focus-visible {
+  outline: 3px solid var(--pro-primary);
+  outline-offset: 4px;
+}
+
+.promax-contact-submit i {
+  font-size: 14px;
+}
+
+/* ===================================
+   PRIVACY & ALERT
+=================================== */
+
+.promax-form-privacy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #84929a;
+  font-size: 12px;
+}
+
+.promax-form-privacy i {
+  color: var(--pro-primary);
+}
+
+.promax-contact-form .alert {
+  font-size: 13px;
+  line-height: 1.6;
+  border-radius: 8px;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 991px) {
+  .promax-contact-form {
+    padding: 30px;
+  }
+
+  .promax-contact-details {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .promax-contact-section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .promax-contact-description {
+    font-size: 14px;
+  }
+
+  .promax-contact-info-item {
+    padding: 15px;
+    gap: 13px;
+  }
+
+  .promax-contact-info-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    font-size: 17px;
+  }
+
+  .promax-contact-info-text h4 {
+    font-size: 14px;
+  }
+
+  .promax-contact-info-text a,
+  .promax-contact-info-text p {
+    font-size: 13px;
+  }
+
+  .promax-contact-form {
+    padding: 25px 10px;
+    border-radius: 12px;
+  }
+
+  .promax-contact-submit {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .promax-contact-info-item,
+  .promax-contact-info-icon,
+  .promax-contact-submit,
+  .promax-contact-form .form-control,
+  .promax-contact-form .form-select {
+    transition: none;
+  }
+}
+
+
+/* contact page end */
+
