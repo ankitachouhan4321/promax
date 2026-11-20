@@ -3278,3 +3278,131 @@ button {
 
 /* contact page end */
 
+
+
+
+/* ======================================
+   DURGA ENTERPRISES - BREADCRUMB
+====================================== */
+
+.durga-breadcrumb {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background-color: #202020;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+/* Breadcrumb Container */
+.durga-breadcrumb-container {
+  position: relative;
+  min-height: 400px;
+}
+
+/* Center Page Title */
+.durga-breadcrumb-title {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: clamp(28px, 3vw, 55px);
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  text-align: center;
+  line-height: 1.2;
+  margin: 0;
+  width: 90%;
+}
+
+/* Bottom Breadcrumb Navigation */
+.durga-breadcrumb-nav {
+  position: absolute;
+  bottom: 48px;
+  left: 12px;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Home Link */
+.durga-breadcrumb-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.durga-breadcrumb-nav a:hover {
+  color: var(--bs-primary);
+}
+
+/* Breadcrumb Arrow */
+.durga-breadcrumb-nav i {
+  color: #ffffff;
+  font-size: 11px;
+}
+
+/* Current Page */
+.durga-breadcrumb-nav span {
+  color:var(--bs-primary);
+}
+
+/* ======================================
+   TABLET RESPONSIVE
+====================================== */
+
+@media (max-width: 991.98px) {
+  .durga-breadcrumb,
+  .durga-breadcrumb-container {
+    min-height: 270px;
+  }
+
+  .durga-breadcrumb-nav {
+    bottom: 35px;
+  }
+}
+
+/* ======================================
+   MOBILE RESPONSIVE
+====================================== */
+
+@media (max-width: 767.98px) {
+  .durga-breadcrumb,
+  .durga-breadcrumb-container {
+    min-height: 220px;
+  }
+
+  .durga-breadcrumb-title {
+    top: 40%;
+    font-size: 28px;
+  }
+
+  .durga-breadcrumb-nav {
+    bottom: 25px;
+    left: 12px;
+    gap: 8px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .durga-breadcrumb-title {
+    font-size: 24px;
+  }
+
+  .durga-breadcrumb-nav {
+    font-size: 12px;
+  }
+}
+
+/* ======================================
+   BREADCRUMB END
+====================================== */

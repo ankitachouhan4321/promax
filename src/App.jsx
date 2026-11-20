@@ -9,6 +9,9 @@ import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+// products page
+import SyrupMakingMachine from './pages/SyrupMakingMachine'
+
 
 
 const App = () => {
@@ -21,6 +24,9 @@ const App = () => {
           <Route path="/about-us" element={<About  />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact-us" element={<Contact />} />
+
+          <Route path="/syrup-making-machine" element={<SyrupMakingMachine />} />
+
     </Routes>
 
     </BrowserRouter>

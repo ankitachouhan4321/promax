@@ -261,7 +261,7 @@ const Home = () => {
         { value: 6, suffix: "+", label: "Industry Segments" },
         { value: 100, suffix: "%", label: "Customer Focus" },
         { value: 10, suffix: "+", label: "Years of Experience" },
-        { value: 500, suffix: "+", label: "Happy Customers" },
+        { value: 5000, suffix: "+", label: "Happy Customers" },
         { value: 24, suffix: "/7", label: "Customer Support" },
     ];
 
@@ -1115,15 +1115,10 @@ const Home = () => {
 
                     </div>
 
-                  
-
                 </div>
             </section>
 
             {/* process end */}
-
-         
-
 
 
         </>
