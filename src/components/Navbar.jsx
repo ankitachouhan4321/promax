@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 import React, { useState } from "react";
 import {
@@ -99,9 +99,9 @@ const Navbar = () => {
             <div className="main-navbar">
                 <div className="container navbar-inner">
                     {/* Replace with your logo image when available */}
-                    <a href="/" className="brand-logo" onClick={closeMenu}>
+                    <Link tp="/" className="brand-logo" onClick={closeMenu}>
                         <img src="./img/logo.jpg" alt="Promax Logo" className="navbar-logo" />
-                    </a>
+                    </Link>
 
                     <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
                         <a href="/" onClick={closeMenu}>Home</a>
@@ -135,14 +135,14 @@ const Navbar = () => {
                                                     </h4>
 
                                                     {category.products.map((product) => (
-                                                        <a
-                                                            href={`/products/${slugify(product)}`}
+                                                        <Link
+                                                            to={`/products/${slugify(product)}`}
                                                             key={product}
                                                             onClick={closeMenu}
                                                         >
                                                             <ArrowRight size={13} />
                                                             {product}
-                                                        </a>
+                                                        </Link>
                                                     ))}
                                                 </div>
                                             );
@@ -162,7 +162,7 @@ const Navbar = () => {
                         </div>
 
 
-                        <a href="/blog" onClick={closeMenu}>Blog</a>
+                        {/* <a href="/blog" onClick={closeMenu}>Blog</a> */}
                         <a href="/contact-us" onClick={closeMenu}>Contact Us</a>
 
                         {/* MOBILE CALL & QUOTE BUTTONS */}

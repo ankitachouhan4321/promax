@@ -12,12 +12,10 @@ import {
 
 /* COMPANY LINKS */
 const companyLinks = [
+    { name: "Home", url: "/" },
     { name: "About Us", url: "/about-us" },
-    { name: "Our Products", url: "/products" },
-    { name: "Industries", url: "/industries" },
-    // { name: "Videos", url: "/videos" },
-    { name: "Blog", url: "/blog" },
-    { name: "FAQs", url: "/faq" },
+    { name: "Our Products", url: "/#products-sec" },
+    { name: "FAQs", url: "/#faq" },
     { name: "Contact Us", url: "/contact-us" },
 ];
 
@@ -55,10 +53,8 @@ const machineryLinks = [
         name: "LED Bulb Making Machine",
         url: "/products/led-bulb-machine",
     },
-    {
-        name: "View All Products",
-        url: "/products",
-    },
+    
+    
 ];
 
 /* CONTACT DETAILS */
@@ -200,7 +196,7 @@ const Footer = () => {
                         <div className="col-lg-3 col-md-6 col-6">
 
                             <h4 className="footer-title">
-                                / OUR MACHINERY
+                                / OUR BEST MACHINERY
                             </h4>
 
                             <ul className="footer-links">
@@ -328,18 +324,18 @@ const Footer = () => {
 
                             <div className="footer-bottom-links">
 
-                                <a href="/privacy-policy">
-                                    Privacy Policy
-                                </a>
-
-                                <a href="/terms-and-conditions">
-                                    Terms & Conditions
-                                </a>
-
-                                <a href="/sitemap">
-                                    Sitemap
-                                </a>
-
+                                <p className="footer-credit">
+                                    Designed by{" "}
+                                    <a
+                                        href="https://viraladsmedia.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Viral Ads Media
+                                    </a>
+                                </p>
+                               
+                               
                             </div>
 
                         </div>

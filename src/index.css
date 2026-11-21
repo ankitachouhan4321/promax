@@ -1813,7 +1813,7 @@ button {
 /* MAIN FOOTER */
 
 .footer-main {
-  padding: 75px 0 80px;
+  padding: 75px 0 20px;
 }
 
 /* COMPANY LOGO */
@@ -1824,7 +1824,7 @@ button {
 }
 
 .footer-logo img {
-  width: 150px;
+  width: 240px;
   max-height: 100px;
   object-fit: contain;
   display: block;
@@ -3279,31 +3279,33 @@ button {
 /* contact page end */
 
 
-
-
 /* ======================================
    DURGA ENTERPRISES - BREADCRUMB
 ====================================== */
 
-.durga-breadcrumb {
+.pro-breadcrumb {
   position: relative;
   width: 100%;
   min-height: 400px;
-  background-color: #202020;
+  /* background-color: #202020; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  background-image:  linear-gradient(
+          rgba(12, 15, 20, 0),
+          rgba(12, 15, 20, 0)
+        ), url("/img/breadcrumb.png")      
 }
 
+
 /* Breadcrumb Container */
-.durga-breadcrumb-container {
+.pro-breadcrumb-container {
   position: relative;
   min-height: 400px;
 }
 
 /* Center Page Title */
-.durga-breadcrumb-title {
+.pro-breadcrumb-title {
   position: absolute;
   top: 38%;
   left: 50%;
@@ -3319,7 +3321,7 @@ button {
 }
 
 /* Bottom Breadcrumb Navigation */
-.durga-breadcrumb-nav {
+.pro-breadcrumb-nav {
   position: absolute;
   bottom: 48px;
   left: 12px;
@@ -3334,24 +3336,24 @@ button {
 }
 
 /* Home Link */
-.durga-breadcrumb-nav a {
+.pro-breadcrumb-nav a {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.durga-breadcrumb-nav a:hover {
+.pro-breadcrumb-nav a:hover {
   color: var(--bs-primary);
 }
 
 /* Breadcrumb Arrow */
-.durga-breadcrumb-nav i {
+.pro-breadcrumb-nav i {
   color: #ffffff;
   font-size: 11px;
 }
 
 /* Current Page */
-.durga-breadcrumb-nav span {
+.pro-breadcrumb-nav span {
   color:var(--bs-primary);
 }
 
@@ -3360,12 +3362,12 @@ button {
 ====================================== */
 
 @media (max-width: 991.98px) {
-  .durga-breadcrumb,
-  .durga-breadcrumb-container {
+  .pro-breadcrumb,
+  .pro-breadcrumb-container {
     min-height: 270px;
   }
 
-  .durga-breadcrumb-nav {
+  .pro-breadcrumb-nav {
     bottom: 35px;
   }
 }
@@ -3375,17 +3377,17 @@ button {
 ====================================== */
 
 @media (max-width: 767.98px) {
-  .durga-breadcrumb,
-  .durga-breadcrumb-container {
+  .pro-breadcrumb,
+  .pro-breadcrumb-container {
     min-height: 220px;
   }
 
-  .durga-breadcrumb-title {
+  .pro-breadcrumb-title {
     top: 40%;
     font-size: 28px;
   }
 
-  .durga-breadcrumb-nav {
+  .pro-breadcrumb-nav {
     bottom: 25px;
     left: 12px;
     gap: 8px;
@@ -3394,11 +3396,11 @@ button {
 }
 
 @media (max-width: 480px) {
-  .durga-breadcrumb-title {
+  .pro-breadcrumb-title {
     font-size: 24px;
   }
 
-  .durga-breadcrumb-nav {
+  .pro-breadcrumb-nav {
     font-size: 12px;
   }
 }
@@ -3406,3 +3408,549 @@ button {
 /* ======================================
    BREADCRUMB END
 ====================================== */
+
+
+/* =================================
+   PRODUCT DETAILS MAIN WRAPPER
+================================= */
+
+.promax-details-wrapper {
+  padding: 60px 0 80px;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+/* =================================
+   LEFT PRODUCT CONTENT
+================================= */
+
+.promax-product-content {
+  padding-right: 15px;
+}
+
+/* Product Image */
+
+.promax-product-image {
+  width: 100%;
+  background: #f5f6f8;
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+
+.promax-product-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  display: block;
+}
+
+/* =================================
+   SECTION HEADING
+   Uses Existing Class
+================================= */
+
+/* =========================================
+   PROMAX PRODUCT DETAILS PAGE
+   Theme: Blue, Navy, Orange
+========================================= */
+
+/* MAIN WRAPPER */
+
+.promax-details-wrapper {
+  padding: 60px 0 80px;
+  background: var(--white);
+  font-family: var(--font-body);
+  color: var(--text);
+}
+
+/* =========================================
+   LEFT PRODUCT CONTENT
+========================================= */
+
+.promax-product-content {
+  padding-right: 15px;
+}
+
+/* Product Image */
+
+.promax-product-image {
+  width: 100%;
+  background: var(--bg-light);
+  margin-bottom: 35px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.promax-product-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  display: block;
+  padding: 20px;
+}
+
+/* =========================================
+   SECTION LABEL
+========================================= */
+
+.promax-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-family: var(--font-body);
+}
+
+.promax-section-label::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+/* =========================================
+   SECTION HEADING
+   Uses Existing .section-heading
+========================================= */
+
+.promax-details-wrapper .section-heading {
+  color: var(--secondary);
+  font-family: var(--font-heading);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 23px;
+  letter-spacing: -0.5px;
+}
+
+/* Main product title */
+
+.promax-product-content h1.section-heading {
+  font-size: clamp(30px, 3vw, 38px);
+  font-weight: 800;
+}
+
+/* =========================================
+   CONTENT SECTIONS
+========================================= */
+
+.promax-content-section {
+  margin-bottom: 45px;
+}
+
+.promax-content-section p {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+.promax-content-section strong {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+/* =========================================
+   KEY FEATURES
+========================================= */
+
+.promax-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 18px;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  height: 100%;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.6;
+  transition: all var(--transition);
+}
+
+.promax-feature-item:hover {
+  background: var(--white);
+  border-color: var(--primary);
+  box-shadow: 0 5px 18px rgba(22, 75, 156, 0.08);
+  transform: translateY(-2px);
+}
+
+.promax-feature-check {
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Lucide Check Icons */
+
+.promax-feature-item svg {
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* =========================================
+   APPLICATION LIST
+========================================= */
+
+.promax-application-list {
+  border-top: 1px solid var(--border);
+}
+
+.promax-application-item {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 15px 5px;
+  border-bottom: 1px solid var(--border);
+  transition: all var(--transition);
+}
+
+.promax-application-item:hover {
+  padding-left: 10px;
+  background: var(--bg-light);
+}
+
+.promax-application-item > span {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 25px;
+  font-family: var(--font-heading);
+}
+
+.promax-application-item p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* =========================================
+   TECHNICAL SPECIFICATIONS
+========================================= */
+
+.promax-spec-table {
+  width: 100%;
+  margin-bottom: 0;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+}
+
+.promax-spec-table tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.promax-spec-table th {
+  width: 40%;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary);
+  padding: 16px;
+  background: var(--bg-light);
+  vertical-align: middle;
+  font-family: var(--font-body);
+}
+
+.promax-spec-table td {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-muted);
+  padding: 16px;
+  vertical-align: middle;
+}
+
+.promax-spec-table tr:hover td,
+.promax-spec-table tr:hover th {
+  background: #eef4fc;
+}
+
+/* =========================================
+   PRODUCT CTA SECTION
+========================================= */
+
+.promax-product-cta {
+  padding: 35px;
+  background: var(--bg-light);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+.promax-product-cta .section-heading {
+  font-size: 23px;
+  margin-bottom: 13px;
+  color: var(--secondary);
+}
+
+.promax-product-cta p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Request Quote Button */
+
+.promax-quote-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 14px 24px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-body);
+  text-decoration: none;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius);
+  transition: all var(--transition);
+}
+
+.promax-quote-btn:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.promax-quote-btn svg {
+  transition: transform var(--transition);
+}
+
+.promax-quote-btn:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* =========================================
+   RIGHT PRODUCT SIDEBAR
+========================================= */
+
+.promax-product-sidebar {
+  background: var(--bg-light);
+  padding: 28px 24px;
+  position: sticky;
+  top: 100px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* Sidebar Heading */
+
+.promax-product-sidebar .section-heading {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--secondary);
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+/* Orange Accent Line */
+
+.promax-product-sidebar .section-heading::after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 3px;
+  background: var(--accent);
+  margin-top: 13px;
+  border-radius: 3px;
+}
+
+/* =========================================
+   SIDEBAR PRODUCT CATEGORIES
+========================================= */
+
+.promax-sidebar-category {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 22px 0 10px;
+  line-height: 1.6;
+}
+
+.promax-sidebar-products > div:first-child
+.promax-sidebar-category {
+  margin-top: 0;
+}
+
+.promax-sidebar-products > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* =========================================
+   SIDEBAR PRODUCT LINKS
+========================================= */
+
+.promax-sidebar-products {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.promax-sidebar-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 14px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-body);
+  line-height: 1.5;
+  transition: all var(--transition);
+}
+
+/* Hover & Active */
+
+.promax-sidebar-link:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+.promax-sidebar-link.active {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--white);
+}
+
+/* Sidebar Arrow Icon */
+
+.promax-arrow {
+  color: var(--primary);
+  font-size: 17px;
+  flex-shrink: 0;
+  transition: all var(--transition);
+}
+
+.promax-sidebar-link svg {
+  color: var(--primary);
+  flex-shrink: 0;
+  transition: all var(--transition);
+}
+
+.promax-sidebar-link:hover .promax-arrow,
+.promax-sidebar-link:hover svg,
+.promax-sidebar-link.active .promax-arrow,
+.promax-sidebar-link.active svg {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+.product-bread.product-bread  {
+  background-image: url(/img/map2.png) !important;
+}
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 991px) {
+  .promax-details-wrapper {
+    padding: 45px 0 65px;
+  }
+
+  .promax-product-content {
+    padding-right: 0;
+  }
+
+  .promax-product-sidebar {
+    position: static;
+  }
+
+  .promax-product-image img {
+    height: 350px;
+  }
+}
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+  .promax-details-wrapper {
+    padding: 35px 0 50px;
+  }
+
+  .promax-details-wrapper .section-heading {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .promax-product-content h1.section-heading {
+    font-size: 29px;
+  }
+
+  .promax-product-image {
+    margin-bottom: 25px;
+  }
+
+  .promax-product-image img {
+    height: 260px;
+    padding: 12px;
+  }
+
+  .promax-content-section {
+    margin-bottom: 35px;
+  }
+
+  .promax-content-section p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .promax-product-sidebar {
+    padding: 22px 18px;
+  }
+
+  .promax-product-sidebar .section-heading {
+    font-size: 19px;
+  }
+
+  .promax-product-cta {
+    padding: 23px;
+  }
+
+  .promax-product-cta .section-heading {
+    font-size: 20px;
+  }
+
+  .promax-spec-table th,
+  .promax-spec-table td {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .promax-quote-btn {
+    padding: 13px 20px;
+  }
+}
+
+/* =========================================
+   END PROMAX PRODUCT DETAILS
+========================================= */
+
+/* promax end */

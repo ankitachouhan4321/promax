@@ -4,6 +4,9 @@ import ReactDOM from "react-dom/client";
 import './index.css'
 import App from './App.jsx'
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
 
 // Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,7 +22,11 @@ import "swiper/css/pagination";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
+
+
   </StrictMode>,
 )
 

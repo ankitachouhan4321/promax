@@ -3,27 +3,22 @@ import { Link } from "react-router-dom";
 
 const Breadcrumb = ({
     title = "Contact Us",
-    backgroundImage = "/img/breadcrumb.png",
+ 
 }) => {
     return (
         <section
-            className="durga-breadcrumb"
-            style={{
-                backgroundImage: `linear-gradient(
-          rgba(12, 15, 20, 0),
-          rgba(12, 15, 20, 0)
-        ), url("${backgroundImage}")`,
-            }}
+            className="pro-breadcrumb"
+         
         >
-            <div className="container durga-breadcrumb-container">
+            <div className="container pro-breadcrumb-container">
                 {/* Page Title */}
-                <h1 className="durga-breadcrumb-title">
+                <h1 className="pro-breadcrumb-title">
                     {title}
                 </h1>
 
                 {/* Breadcrumb Navigation */}
                 <nav
-                    className="durga-breadcrumb-nav"
+                    className="pro-breadcrumb-nav"
                     aria-label="Breadcrumb"
                 >
                     <Link to="/">Home</Link>

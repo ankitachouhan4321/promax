@@ -750,7 +750,7 @@ const Home = () => {
 
             {/* PRODUCTS SECTION START */}
 
-            <section className="products-section section-padding">
+            <section className="products-section section-padding" id="products-sec">
                 <div className="container">
 
                     {/* Section Heading */}
@@ -851,12 +851,14 @@ const Home = () => {
                                             </a>
 
                                             <a
-                                                href="/contact-us"
+                                                href="https://wa.me/917404928392?(
+    `Hello Promax, I am interested in ${product.name}. Please share more details and pricing."
                                                 className="btn btn-accent"
                                             >
                                                 Get Quote
                                                 <ArrowRight size={14} />
                                             </a>
+                                              
 
                                         </div>
 
