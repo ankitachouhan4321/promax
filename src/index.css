@@ -3283,79 +3283,199 @@ button {
    DURGA ENTERPRISES - BREADCRUMB
 ====================================== */
 
+/* =========================================
+   PROMAX BREADCRUMB
+========================================= */
+
 .pro-breadcrumb {
   position: relative;
   width: 100%;
   min-height: 400px;
-  /* background-color: #202020; */
+
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 29, 61, 0.82) 0%,
+      rgba(8, 29, 61, 0.52) 50%,
+      rgba(8, 29, 61, 0.35) 100%
+    ),
+    url("/img/breadcrumb.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image:  linear-gradient(
-          rgba(12, 15, 20, 0),
-          rgba(12, 15, 20, 0)
-        ), url("/img/breadcrumb.png")      
+  overflow: hidden;
 }
 
+/* Subtle bottom accent */
 
-/* Breadcrumb Container */
+.pro-breadcrumb::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--accent),
+    var(--primary)
+  );
+}
+
+/* =========================================
+   BREADCRUMB CONTAINER
+========================================= */
+
 .pro-breadcrumb-container {
   position: relative;
   min-height: 400px;
+  z-index: 1;
 }
 
-/* Center Page Title */
+/* =========================================
+   CENTER PAGE TITLE
+========================================= */
+
 .pro-breadcrumb-title {
   position: absolute;
-  top: 38%;
+  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: clamp(28px, 3vw, 55px);
-  font-weight: 600;
-  /* text-transform: uppercase; */
-  text-align: center;
-  line-height: 1.2;
-  margin: 0;
+
   width: 90%;
+  margin: 0;
+
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: clamp(30px, 3.5vw, 52px);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  text-align: center;
+
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.25);
 }
 
-/* Bottom Breadcrumb Navigation */
+/* Orange accent below title */
+
+.pro-breadcrumb-title::after {
+  content: "";
+  display: block;
+
+  width: 55px;
+  height: 4px;
+  margin: 18px auto 0;
+
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+/* =========================================
+   BOTTOM BREADCRUMB NAVIGATION
+========================================= */
+
 .pro-breadcrumb-nav {
   position: absolute;
-  bottom: 48px;
+  bottom: 40px;
   left: 12px;
 
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 
-  font-size: 15px;
-  font-weight: 500;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 /* Home Link */
+
 .pro-breadcrumb-nav a {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color var(--transition);
 }
 
 .pro-breadcrumb-nav a:hover {
-  color: var(--bs-primary);
+  color: var(--accent);
 }
 
 /* Breadcrumb Arrow */
+
 .pro-breadcrumb-nav i {
-  color: #ffffff;
+  color: var(--accent);
   font-size: 11px;
 }
 
 /* Current Page */
+
 .pro-breadcrumb-nav span {
-  color:var(--bs-primary);
+  color: var(--accent);
+  font-weight: 700;
 }
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 991px) {
+  .pro-breadcrumb,
+  .pro-breadcrumb-container {
+    min-height: 320px;
+  }
+
+  .pro-breadcrumb-title {
+    top: 43%;
+    font-size: clamp(28px, 4vw, 42px);
+  }
+
+  .pro-breadcrumb-nav {
+    bottom: 30px;
+    left: 12px;
+    font-size: 13px;
+  }
+}
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 575px) {
+  .pro-breadcrumb,
+  .pro-breadcrumb-container {
+    min-height: 250px;
+  }
+
+  .pro-breadcrumb {
+    background-position: center;
+  }
+
+  .pro-breadcrumb-title {
+    top: 42%;
+    width: 94%;
+    font-size: clamp(24px, 6vw, 30px);
+    line-height: 1.35;
+  }
+
+  .pro-breadcrumb-title::after {
+    width: 40px;
+    height: 3px;
+    margin-top: 12px;
+  }
+
+  .pro-breadcrumb-nav {
+    bottom: 22px;
+    left: 12px;
+    gap: 8px;
+    font-size: 12px;
+  }
+}
+
 
 /* ======================================
    TABLET RESPONSIVE

@@ -848,14 +848,28 @@ const Home = () => {
                                                 className="btn btn-outline"
                                             >
                                                 View More
+                                                <ArrowRight size={14}/>
+                                                
                                             </a>
 
-                                            <a
+                                            {/* <a
                                                 href="https://wa.me/917404928392?(
     `Hello Promax, I am interested in ${product.name}. Please share more details and pricing."
                                                 className="btn btn-accent"
                                             >
                                                 Get Quote
+                                                <ArrowRight size={14} />
+                                            </a> */}
+
+                                            <a
+                                                href={`https://wa.me/917404928392?text=${encodeURIComponent(
+                                                    `Hello Promax, I am interested in ${product.name}. Please share more details and pricing.`
+                                                )}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="btn btn-accent"
+                                            >
+                                                Enquire Now
                                                 <ArrowRight size={14} />
                                             </a>
                                               

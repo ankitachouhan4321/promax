@@ -175,7 +175,7 @@ const About = () => {
                 {/* BUTTON */}
                 <div className="mt-4">
                   <a
-                    href="/contact"
+                    href="/contact-us"
                     className="btn btn-primary"
                   >
                     Contact Now
