@@ -100,7 +100,7 @@ const Navbar = () => {
                 <div className="container navbar-inner">
                     {/* Replace with your logo image when available */}
                     <Link tp="/" className="brand-logo" onClick={closeMenu}>
-                        <img src="./img/logo.jpg" alt="Promax Logo" className="navbar-logo" />
+                        <img src="/img/logo.jpg" alt="Promax Logo" className="navbar-logo" />
                     </Link>
 
                     <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
@@ -153,9 +153,9 @@ const Navbar = () => {
                                         <span>
                                             Explore machinery solutions for your business
                                         </span>
-                                        <a href="/products" onClick={closeMenu}>
+                                        {/* <a href="/products" onClick={closeMenu}>
                                             View All Machines <ArrowRight size={15} />
-                                        </a>
+                                        </a> */}
                                     </div>
                                 </div>
                             )}
