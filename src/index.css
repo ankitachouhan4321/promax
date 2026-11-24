@@ -4074,3 +4074,209 @@ button {
 ========================================= */
 
 /* promax end */
+
+
+/* floating start */
+/* ================================
+   PROMAX INDIA FLOATING CONTACT
+================================ */
+
+/* Main fixed wrapper */
+.promax-floating-wrapper {
+       position: fixed;
+    right: 18px;
+    bottom: 90px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 14px;
+}
+
+/* Floating animation */
+.promax-floating-motion {
+    animation: promaxFloat 3s ease-in-out infinite;
+}
+
+.promax-floating-motion.paused {
+    animation-play-state: paused;
+}
+
+@keyframes promaxFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Main contact button */
+.promax-main-contact {
+    position: relative;
+    width: 62px;
+    height: 62px;
+    border: none;
+    border-radius: 50%;
+    background: var(--promax-primary, var(--primary, #e63927));
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.promax-main-contact:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.promax-main-contact svg {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.35s ease;
+}
+
+/* Plus icon rotation */
+.promax-main-contact.opened svg {
+    transform: rotate(45deg);
+}
+
+/* Pulsing border animation */
+.promax-pulse {
+    position: absolute;
+    inset: -7px;
+    border: 2px solid var(--promax-primary, var(--primary, #e63927));
+    border-radius: 50%;
+    animation: promaxPulse 2.2s ease-out infinite;
+    pointer-events: none;
+}
+
+@keyframes promaxPulse {
+    0% {
+        transform: scale(0.85);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1.35);
+        opacity: 0;
+    }
+}
+
+/* Hide pulse when options are open */
+.promax-main-contact.opened .promax-pulse {
+    animation: none;
+    opacity: 0;
+}
+
+/* Expandable contact options */
+.promax-contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+    pointer-events: none;
+    transition: all 0.35s ease;
+}
+
+.promax-contact-options.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* Individual contact buttons */
+.promax-contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    min-width: 145px;
+    padding: 12px 15px 12px 18px;
+    border-radius: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.promax-contact-item:hover {
+    transform: translateX(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+}
+
+/* WhatsApp button */
+.promax-contact-item.whatsapp {
+    background: #25d366;
+}
+
+/* Call button */
+.promax-contact-item.call {
+    background: var(--promax-secondary, var(--secondary, #212121));
+}
+
+/* Enquiry button */
+.promax-contact-item.enquiry {
+    background: var(--promax-primary, var(--primary, #e63927));
+}
+
+.promax-contact-item svg {
+    flex-shrink: 0;
+}
+
+/* Keyboard accessibility */
+.promax-main-contact:focus-visible,
+.promax-contact-item:focus-visible {
+    outline: 3px solid #888888;
+    outline-offset: 4px;
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+    .promax-floating-wrapper {
+        right: 15px;
+        bottom: 20px;
+        gap: 12px;
+    }
+
+    .promax-main-contact {
+        width: 54px;
+        height: 54px;
+    }
+
+    .promax-contact-item {
+        min-width: 130px;
+        font-size: 12px;
+        padding: 10px 13px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .promax-floating-motion,
+    .promax-pulse {
+        animation: none;
+    }
+
+    .promax-contact-options,
+    .promax-main-contact,
+    .promax-main-contact svg,
+    .promax-contact-item {
+        transition: none;
+    }
+}
+/* floating end */

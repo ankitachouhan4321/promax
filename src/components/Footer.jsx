@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from "react";
+import FloatingContact from '../components/FloatingContact';
 import {
     ArrowUpRight,
     ArrowUp,
@@ -94,6 +95,7 @@ const Footer = () => {
     };
 
     return (
+        <>
         <footer className="promax-footer">
 
             {/* FOOTER TOP CTA */}
@@ -358,6 +360,9 @@ const Footer = () => {
             )}
 
         </footer>
+
+        <FloatingContact/>
+        </>
     );
 };
 

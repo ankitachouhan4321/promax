@@ -2,8 +2,7 @@
 import React, { useState } from "react";
 
 // Replace these with official Promax contact details.
-// const CONTACT_EMAIL = "info@promax-india.com";
-const CONTACT_EMAIL = "info.viraladsmedia@gmail.com";
+const CONTACT_EMAIL = "info@promax-india.com";
 const PHONE_NUMBERS = ["+917404928392"];
 const COMPANY_ADDRESS = "Unit No 111, 1st Floor, Krishna Apra Business Square, Netaji Subhash Place, Pitampura, Delhi, India, Delhi";
 const BUSINESS_HOURS = "10:am to 06:pm";
